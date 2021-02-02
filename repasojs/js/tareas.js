@@ -1,0 +1,26 @@
+ const nombreTarea = 'Pasear al perro';
+
+ export default nombreTarea;
+
+
+// Escribir clases
+// Todas las clases tienen una mayúscula
+class Tarea {
+    constructor(nombre, prioridad) {
+        this.nombre = nombre;
+        this.prioridad = prioridad;
+    }
+    mostrar() {
+        return `${this.nombre} tiene una prioridad de ${this.prioridad}`;
+    }
+}
+
+let tarea1 = new Tarea('Aprender Javascript', 'Alta');
+let tarea2 = new Tarea('Aprender React', 'Alta');
+let tarea3 = new Tarea('Aprender Sketch', 'Media');
+let tarea4 = new Tarea('Aprender Lettering', 'Media');
+
+console.log(tarea1.mostrar());
+console.log(tarea2.mostrar());
+console.log(tarea3.mostrar());
+console.log(tarea4.mostrar());
